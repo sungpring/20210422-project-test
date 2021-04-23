@@ -30,6 +30,7 @@ public class Application {
                 context.addConstraint(securityConstraint);
             }
         };
+        
 		Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
 		connector.setScheme("http");
 		connector.setSecure(false);
